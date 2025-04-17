@@ -1,0 +1,59 @@
+    /* Стили для выпадающего списка */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .dropdown-button {
+        color: var(--blue);
+        border: 1px solid var(--blue);
+        border-radius: 60px;
+        padding: 20px 40px;
+        background-color: #fff;
+
+        border: 1px solid var(--blue);
+        background-color: var(--blue);
+        color: #fff;
+    }
+
+    .dropdown-button:hover {}
+
+
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content.open {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-item {
+        display: block;
+        width: 100%;
+
+        cursor: pointer;
+
+        color: var(--blue);
+        border: 1px solid var(--blue);
+        border-radius: 60px;
+        padding: 20px 40px;
+        background-color: #fff;
+    }
+
+    .dropdown-item:hover {
+        background-color: #ddd;
+    }
+
+    /* Показать список при активации */
+    .dropdown.open .dropdown-content {
+        display: block;
+    }
+    
+

@@ -1,0 +1,27 @@
+html {
+    --border-radius: 8px;
+    --theme-base-color: #365edc;
+    --theme-base-opacity-color: #365edc1a;
+    --theme-more-color: #365edc;
+    --theme-outer-border-radius: 8px;
+    --theme-text-transform: none;
+    --theme-letter-spacing: normal;
+    --theme-button-font-size: 0%;
+    --theme-button-padding-2px: 0%;
+    --theme-button-padding-1px: 0%;
+    --theme-more-color-hue: 226;
+    --theme-more-color-saturation: 70%;
+    --theme-more-color-lightness: 54%;
+    --theme-base-color-hue: 226;
+    --theme-base-color-saturation: 70%;
+    --theme-base-color-lightness: 54%;
+    --theme-lightness-hover-diff: 6%;
+}
+
+html {
+    --border-radius: 8px;
+    --theme-base-color: #fd9c12;
+    --theme-base-opacity-color: #fd9c121a;
+    --theme-more-color: #fd9c12;
+
+}
