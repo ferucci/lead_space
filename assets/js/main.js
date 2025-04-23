@@ -1,3 +1,4 @@
+
 (jQuery)(document).ready(function ($) {
 
     $(document).on('click touch', '.mod-blog .filters button', function () {
@@ -56,15 +57,8 @@
         margin: -10,
         navText: ['<div class="prev"></div>', '<div class="next"></div>']
     });
-    $('.mod-websites-process .owl-carousel').owlCarousel({
-        loop: false,
-        items: 1,
-        dots: false,
-        nav: true,
-        margin: 25,
-        navText: ['<div class="prev"></div>', '<div class="next"></div>'],
-        responsive: { 768: { items: 3 } }
-    });
+
+
     $('.mod-context-business .owl-carousel').owlCarousel({ loop: false, items: 1, dots: false, nav: true, margin: 40, stagePadding: 50, navText: ['<div class="prev"></div>', '<div class="next"></div>'] });
     $('.mod-context-settings .owl-carousel').owlCarousel({
         loop: false,
@@ -76,20 +70,6 @@
         navText: ['<div class="prev"></div>', '<div class="next"></div>']
     });
     $('.mod-context-client .owl-carousel').owlCarousel({ loop: false, items: 1, dots: false, nav: true, margin: 40, navText: ['<div class="prev"></div>', '<div class="next"></div>'] });
-
-    $('.mod-tarif .owl-carousel').owlCarousel(
-        {
-            loop: true,
-            items: 1,
-            dots: false,
-            nav: true,
-            margin: 40,
-            navText: ['<div class="prev"></div>', '<div class="next"></div>']
-        }
-    );
-
-    $('.mod-work .owl-carousel').owlCarousel({ loop: true, items: 1, dots: false, nav: true, margin: 40, navText: ['<div class="prev"></div>', '<div class="next"></div>'] });
-    $('.mod-get .owl-carousel').owlCarousel({ loop: true, items: 1, dots: false, nav: true, margin: 40, navText: ['<div class="prev"></div>', '<div class="next"></div>'] });
     $('.mod-context-result .owl-carousel').owlCarousel({ loop: true, items: 1, dots: false, nav: true, margin: 40, navText: ['<div class="prev"></div>', '<div class="next"></div>'] });
     $('.mod-services .owl-carousel').owlCarousel({ loop: true, items: 1, dots: false, nav: true, autoHeight: true, margin: 40, navText: ['<div class="prev"></div>', '<div class="next"></div>'] });
     $('.mod-crm-banner .owl-carousel').owlCarousel({ loop: true, items: 2, dots: true, nav: false, margin: 40, autoWidth: true, responsive: { 991: { items: 1, } } });
@@ -201,7 +181,6 @@
         dots: true,
         nav: true,
         margin: 30,
-        /*navText: ['<div class="prev"></div>', '<div class="next"></div>']*/
     });
 
     $('.mod-think .slider1').owlCarousel({
@@ -217,31 +196,6 @@
         startPosition: 'one-hash',
     }
     );
-
-    /*$('.mod-think .links').owlCarousel({
-        items: 4,
-        loop: false,
-        dots: false,
-        nav: true,
-        thumbs: true,
-        thumbsPrerendered: true,
-        margin: 20,
-        navText: ['', ''],
-        autoHeight: true,
-        URLhashListener: true,
-        startPosition: 'one-hash',
-        responsive: {
-            600: { items: 2, stagePadding: 50 },
-            0: { items: 2, stagePadding: 20 } },
-        }
-    );*/
-
-
-
-
-
-
-
 
     $('.mod-profit .owl-carousel').owlCarousel({
         items: 1,
@@ -274,6 +228,72 @@
 
 
 
+    // mod-work
+    $('.mod-work .owl-carousel').owlCarousel({
+        loop: true,
+        items: 1,
+        dots: false,
+        nav: true,
+        margin: 25,
+        navText: ['<div class="prev"></div>', '<div class="next"></div>'],
+        responsive: {
+            0: { items: 1, },
+            600: { items: 2, },
+            1200: { items: 3 }
+        }
+    });
+
+    // mod-advantages
+
+    $('.mod-get .owl-carousel').owlCarousel({
+        loop: true,
+        items: 1,
+        dots: false,
+        nav: true,
+        margin: 40,
+        navText: ['<div class="prev"></div>', '<div class="next"></div>'],
+        responsive: {
+            0: { items: 1, },
+            600: { items: 2, },
+            1200: { items: 3 }
+        }
+    });
+
+    $('.mod-tarif .owl-carousel').owlCarousel(
+        {
+            loop: true,
+            items: 1,
+            dots: false,
+            nav: true,
+            margin: 40,
+            navText: ['<div class="prev"></div>', '<div class="next"></div>'],
+            responsive: {
+                0: { items: 1, stagePadding: 0, margin: 10, },
+                600: { items: 2, stagePadding: 0, margin: 10, },
+                1200: { items: 5, stagePadding: 150, nav: true, }
+            }
+        }
+    );
+
+    // Reviews
+
+    $('.mod-reviews .owl-carousel').owlCarousel({
+        items: 1,
+        dots: true,
+        nav: false,
+        margin: 30,
+        autoHeight: true,
+        navText: ['<div class="prev"></div>', '<div class="next"></div>'],
+        responsive: {
+            992: { nav: true, items: 3, loop: false, },
+            576: { nav: false, loop: true, items: 2, },
+            0: { items: 1, stagePadding: 0, nav: false, loop: true }
+        }
+    });
+
+    // -----------
+
+
     $(document).ready(function () {
         $('.mod-team .item').hover(
             function () {
@@ -289,13 +309,6 @@
         )
     });
 
-    /* $(document).ready(function() {
-         $('.mod-team .item').on('touchstart touchend hover', function(e) {
-             e.preventDefault();
-             $(this).closest('.wrap').find('.fulltext').toggleClass('active');
-             $(this).closest('.wrap button').toggleClass('active');
-         });
-     });*/
     document.querySelectorAll('.simulated-hover').forEach(element => {
         element.addEventListener('touchstart', () => element.classList.add('on-hover'));
         element.addEventListener('touchend', () => element.classList.remove('on-hover'));
@@ -316,19 +329,6 @@
         $('ul.main').css('transform', 'translateX(0)');
     });
 
-    // function positionImage() {
-    //     const path = document.getElementById('KHM');
-    //     const bbox = path.getBBox();  // Получаем границы пути
-
-    //     // Получаем ссылку на изображение и задаём позицию
-    //     const image = document.getElementById('infoImage');
-    //     image.setAttribute('x', bbox.x + bbox.width / 2 - 16);  // Центрирование изображения
-    //     image.setAttribute('y', bbox.y + bbox.height / 2 - 16);
-    //   }
-
-    //   // Вызов функции после загрузки документа
-    //   window.onload = positionImage;
-    //$(document).on('click touch', '.mod-map a', function(e) {
     $(document).on('click touch', '.mod-map span', function (event) {
         // e.preventDefault();
 
@@ -551,23 +551,20 @@ window.addEventListener("DOMContentLoaded", function () {
 
     });
 
-});
+    const getChildren = (item) => {
 
-const getChildren = (item) => {
+        const children = document.querySelector(item);
+        if (!children) {
+            return
+        } else {
+            children.addEventListener("click", function (e) {
+                e.preventDefault();
+                this.closest('.dropdown').classList.toggle('active');
+            })
+        }
 
-    const children = document.querySelector(item);
-    if (!children) {
-        return
-    } else {
-        children.addEventListener("click", function (e) {
-            e.preventDefault();
-            this.closest('.dropdown').classList.toggle('active');
-        })
     }
 
-}
+    getChildren("#dropbtn")
+});
 
-
-
-
-getChildren("#dropbtn")

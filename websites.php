@@ -68,6 +68,7 @@ ini_set('display_errors', 1);
 
 echo 'Тукущая дирректория', __DIR__;
 
+require(__DIR__ . '/include/websites/sprites.php');
 require(__DIR__ . '/include/websites/banner.php');
 require(__DIR__ . '/include/websites/development.php');
 require(__DIR__ . '/include/websites/cases.php');
@@ -77,6 +78,7 @@ require(__DIR__ . '/include/websites/work.php');
 require(__DIR__ . '/include/mainpage/spheres.php');
 require(__DIR__ . '/include/websites/get.php');
 require(__DIR__ . '/include/websites/tarif.php');
+require(__DIR__ . '/include/websites/reviews.php');
 require(__DIR__ . '/include/answer.php');
 require(__DIR__ . '/include/contact.php');
 

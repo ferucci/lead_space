@@ -156,6 +156,7 @@
 <script src="assets/js/jquery.mask.js"></script>
 <script src="assets/js/dop.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/process.js"></script>
 <div class="btn-up btn-up_hide"></div>
 <script>
     const btnUp = {

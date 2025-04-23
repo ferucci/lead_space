@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="assets/css/dop.css">
     <link rel="stylesheet" href="assets/css/style.css?rnd=<?= rand(0, 9999) ?>">
     <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/process.css">
     <title>LeadSpace</title>
 </head>
 
