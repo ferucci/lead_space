@@ -154,6 +154,11 @@
     svg path {
       transition: .3s;
     }
+
+    svg.main-svg,
+    svg.dop {
+      fill: #fff;
+    }
   }
 
   // base

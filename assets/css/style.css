@@ -1882,6 +1882,7 @@ textarea {
 	.mod-spheres {
 		margin-bottom: 0;
 		margin-top: 0;
+		padding-top: 80px;
 	}
 
 	.mod-spheres .title {
@@ -4244,13 +4245,8 @@ textarea {
 
 .mod-get {
 	padding-top: 150px;
-	padding-bottom: 150px;
+	padding-bottom: 310px;
 	position: relative;
-	margin-top: -100px;
-}
-
-.mod-get .row:first-child {
-	margin-top: 70px;
 }
 
 .mod-get .dop {
@@ -4310,6 +4306,10 @@ textarea {
 	.mod-get .dop {
 		display: none;
 	}
+
+	.mod-get {
+		padding-bottom: 260px;
+	}
 }
 
 @media screen and (max-width: 576px) {
@@ -4363,9 +4363,24 @@ textarea {
 }
 
 .mod-reviews .wrap {
-	padding: 2rem 2.2rem;
+	background-image: url(../img/icons/icon-s.png);
+	background-repeat: no-repeat;
+	background-position: top 25% left 5%;
+	padding: 1.5rem 2.2rem;
 	border-radius: 1rem;
 	box-shadow: 0px 7px 30px rgb(52, 87, 139, .5);
+}
+
+.mod-reviews .wrap .text {
+	letter-spacing: 0;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+@media (max-width: 576px) {
+	.mod-reviews .wrap {}
 }
 
 .mod-reviews .main-title {
@@ -4543,9 +4558,12 @@ textarea {
 @media screen and (max-width: 1200px) {
 	.mod-tarif {
 		background-size: cover;
-		min-height: 100vh;
+		min-height: 74vh;
+		padding: 0 0 140px 0;
+	}
 
-		padding: 140px 0;
+	.mod-get .row:first-child {
+		margin-top: 150px;
 	}
 
 	.mod-tarif .main-title {
