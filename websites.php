@@ -66,7 +66,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-echo 'Тукущая дирректория', __DIR__;
+// echo 'Тукущая дирректория', __DIR__;
 
 require(__DIR__ . '/include/websites/sprites.php');
 require(__DIR__ . '/include/websites/banner.php');

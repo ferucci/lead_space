@@ -1,0 +1,75 @@
+.mod-reviews::after {
+  background:
+    url(../../upload/puzzle.svg) left center no-repeat,
+    url(../../upload/puzzle-blue.svg) right center no-repeat;
+}
+
+.mod-tarif::after {
+  background:
+    url(../../upload/puzzle.svg) right 10% center no-repeat;
+  opacity: .1;
+}
+
+.mod-reviews,
+.mod-tarif,
+.mod-work,
+.mod-websites-process,
+.mod-websites-cases {
+
+  &::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    left: 50%;
+    margin-left: -50vw;
+    width: 100vw;
+    height: 50%;
+    background-size: auto 100%;
+    top: 0;
+  }
+}
+
+.mod-work::after {
+  background: url(../../upload/puzzle-blue.svg) left 30% top no-repeat;
+  transform: rotate(90deg);
+  left: -3%;
+}
+
+.mod-websites-process::after {
+  background: url(../../upload/puzzle.svg) right -19% bottom 45% no-repeat;
+  height: 100%;
+  opacity: .1;
+  background-size: 35%;
+}
+
+.mod-websites-cases::after {
+  background: url(../../upload/puzzle-blue.svg) left -5% bottom 0% no-repeat, url(../../upload/puzzle-blue.svg) left -5% bottom 130% no-repeat, url(../../upload/puzzle-blue.svg) left -5% bottom 66% no-repeat, url(../../upload/puzzle-blue.svg) left 39% top -32% no-repeat;
+  opacity: .2;
+  height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+
+  .mod-reviews,
+  .mod-tarif,
+  .mod-work,
+  .mod-websites-process,
+  .mod-websites-cases {
+
+    &::after {
+      content: none
+    }
+  }
+}
+
+
+
+// Слайдер
+
+.owl-carousel .owl-stage {
+  display: flex;
+}
+
+.owl-item {
+  will-change: transform;
+}

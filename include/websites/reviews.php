@@ -1,4 +1,4 @@
-<div id="mod-reviews" class="mod-reviews bg-color">
+<section id="mod-reviews" class="mod-reviews bg-color">
   <div class="col-lg-3 w-100">
     <h3 class="main-title mb-5">Отзывы</span></h3>
   </div>
@@ -32,4 +32,4 @@
     </div>
 
   </div>
-</div>
+</section>

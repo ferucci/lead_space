@@ -55,11 +55,11 @@ $(document).ready(function () {
       return;
     }
 
-    // 1. Получаем реальную ширину элемента слайдера
+    // 1. Получаю реальную ширину элемента слайдера
     const $firstItem = $slider.find('.owl-item:not(.cloned)').first();
     const itemWidth = $firstItem.width();
 
-    // 2. Задаем желаемый процент (например, 10%)
+    // 2. Задаю желаемый процент (например, 10%)
     const marginPercent = -16.5;
     const marginValue = itemWidth * marginPercent / 100;
 
@@ -67,7 +67,7 @@ $(document).ready(function () {
 
 
 
-    // Применяем margin ко всем элементам, кроме первого
+    // Применяю margin ко всем элементам, кроме первого
     $slider.find('.owl-item').each(function (index) {
       if (index === 0) {
         // Для первого элемента - сбрасываем margin
@@ -75,14 +75,14 @@ $(document).ready(function () {
           'margin-left': '0',
         });
       } else {
-        // Для остальных элементов - устанавливаем margin
+        // Для остальных элементов - устанавливаю margin
         $(this).css({
           'margin-left': marginValue + 'px'
         });
       }
     });
 
-    // Обновляем слайдер без триггера событий
+    // Обновляю слайдер без триггера событий
     setTimeout(() => {
       owl.onResize();
       isApplyingMargins = false;
@@ -193,7 +193,7 @@ $(document).ready(function () {
     resizeTimer = setTimeout(function () {
       updateItemPositions();
       initProcessSlider();
-      setTimeout(applySliderMargins, 100);
+      applySliderMargins();
     }, 200);
   }
 

@@ -1,0 +1,131 @@
+:root {
+  --link-color: #1C69D4;
+}
+
+
+
+
+.mod-reviews {
+  padding: 50px 0 240px;
+
+  &::before {
+    background: url(../../upload/reviews/light-bg.png) no-repeat;
+    z-index: -2;
+    top: -15rem;
+    background-size: cover;
+  }
+
+  .main-title {
+    text-align: center;
+  }
+
+  .wrap {
+    background-image: url(../img/icons/icon-s.png);
+    background-repeat: no-repeat;
+    background-position: top 30% left 8%;
+    padding: 1.5rem 2.2rem;
+    border-radius: .5rem;
+    box-shadow: 0px 7px 30px rgb(52, 87, 139, .5);
+  }
+
+  .wrap .text {
+    letter-spacing: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .text {
+    letter-spacing: 0
+  }
+
+  .title,
+  .link {
+    font-weight: 600;
+    line-height: 125%;
+  }
+
+  .title {
+    font-size: 1.22rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .link {
+    display: inline-block;
+    font-size: 1rem;
+    color: var(--link-color);
+    position: relative;
+    padding-right: 35px;
+  }
+
+  .link::before {
+    content: '';
+    position: absolute;
+    background-image: url(../../upload/reviews/icons/arrow-action.svg);
+    width: 20px;
+    height: 18px;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .owl-carousel .owl-dots,
+  .owl-carousel .owl-nav {
+    display: block;
+  }
+
+
+  // slider 
+  .owl-carousel {
+    margin-bottom: 140px;
+  }
+
+  .owl-item {
+    background: #fff;
+    border-radius: .5rem;
+  }
+
+  .owl-carousel .owl-dots {
+    bottom: -50px;
+  }
+
+  /* ----  */
+}
+
+@media (max-width: 1200px) {
+  .mod-reviews {
+    padding: 0 0 130px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .mod-reviews .owl-carousel .owl-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .mod-get::before {
+    z-index: -1;
+  }
+
+  .mod-reviews {
+
+    &::before {
+      background: url(../../upload/reviews/bg-mobile.png);
+      background-size: 100% 100%;
+    }
+  }
+
+  .mod-reviews .main-title {
+    font-size: 2rem;
+  }
+
+  .mod-reviews .owl-carousel .owl-nav {
+    display: block;
+    max-width: 150px;
+    top: 125%;
+  }
+}

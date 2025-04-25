@@ -1,5 +1,5 @@
 <section class="mod-development bg-color" id="mod-development">
-    <div class="d-flex justify-content-between mb-4 flex-wrap">
+    <div class="d-flex justify-content-between mb-4 flex-wrap mt-4 mt-sm-0">
         <div class="main-title">Разрабатываем сайты <br><span class="text-primary">с 2019 года</span></div>
         <div class="introtext">Мы используем CMS «1С-Битрикс» <br>и ежегодно подтверждаем <br>статус сертифицированного партнера.</div>
     </div>

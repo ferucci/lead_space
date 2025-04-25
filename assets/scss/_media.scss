@@ -1,0 +1,76 @@
+@media screen and (max-width: 1200px) {
+  .mod-work {
+    padding: 140px 0;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .mod-tarif::before {
+    background-size: auto;
+  }
+
+  .mod-work::before {
+    background-size: auto;
+  }
+
+  .mod-get::before {
+    background-size: auto;
+  }
+
+  .mod-reviews::before {
+    background-size: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mod-websites-process {
+    padding-bottom: 120px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .mod-development::before {
+    background: url('../../upload/development/bg2.png') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .mod-websites-process::before {
+    background: url('../../upload/websites-process/bg2.png') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .mod-work {
+    padding: 100px 0;
+
+    &::before {
+      background: url('../../upload/websites-work/bg2.png') no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+  .mod-tarif {
+    padding-top: 160px;
+    padding-bottom: 170px;
+
+    &::before {
+      background: url('../../upload/websites-tarif/bg2.png') no-repeat;
+      top: 0;
+      background-size: 100% 100%;
+    }
+  }
+
+  .mod-reviews {
+    &::before {}
+  }
+
+  .mod-tech .btn {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .mod-work {
+    padding-bottom: 50px;
+  }
+}

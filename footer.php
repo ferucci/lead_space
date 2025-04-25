@@ -22,18 +22,19 @@
                     <li><a href="">Контекстная реклама</a></li>
                 </ul>
                 <div>
-                    <div class="d-flex align-items-center mb-1">
+                    <div class="d-flex align-items-center flex-column-reverse gap-2 mb-1">
                         <a href="tel:+79391112043" class="phone">+7 939 111-20-43</a>
                         <a data-fancybox href="#hidden" class="btn btn-primary">Начать проект</a>
-                    </div>
-                    <div class="soc mb-3">
-                        <a href="#" style="margin-right: 12px;"><img src="upload/telegram.png" alt=""></a>
-                        <a href="#"><img src="upload/whatsapp.png" alt=""></a>
                     </div>
                     <div class="d-flex align-items-center email">
                         <img src="upload/icon/email.svg" alt="" style="margin-right: 8px;">
                         <a href="mailto:info@lead-space.ru">info@lead-space.ru</a>
                     </div>
+                    <div class="d-flex align-items-end justify-content-end gap-2 soc mb-3">
+                        <a href="#"><img src="upload/telegram.png" alt=""></a>
+                        <a href="#"><img src="upload/whatsapp.png" alt=""></a>
+                    </div>
+
                 </div>
             </div>
 
@@ -59,7 +60,7 @@
             </div>
 
             <div id="author">
-                <div>© 2023 «LeadSpace» Все права защищены.</div>
+                <div>© 2025 «LeadSpace» Все права защищены.</div>
                 <a href="#">Политика конфиденциальности</a>
                 <a href="#">LeadSpace на портале Битрикс24</a>
             </div>

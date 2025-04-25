@@ -3642,6 +3642,10 @@ textarea {
 }
 
 @media screen and (max-width: 600px) {
+	.mod-websites-banner {
+		padding-bottom: 450px;
+	}
+
 	.mod-websites-banner .owl-carousel .owl-dots {
 		top: 59%;
 	}
@@ -3898,14 +3902,10 @@ textarea {
 	.mod-development .introtext {
 		margin-bottom: 40px;
 	}
-
-	.mod-development::before {
-		background: url('../../upload/development/bg2.png') no-repeat;
-		background-size: 100%;
-	}
 }
 
 .mod-websites-cases {
+	position: relative;
 	margin-bottom: 100px;
 	margin-top: -50px;
 }
@@ -4021,6 +4021,8 @@ textarea {
 
 .mod-tech {
 	margin-top: -100px;
+	position: relative;
+	z-index: 1;
 }
 
 .mod-tech .row {
@@ -4047,6 +4049,7 @@ textarea {
 	border-radius: 60px;
 	display: flex;
 	align-items: center;
+	background: white;
 }
 
 .mod-tech .nav-tabs .nav-item .nav-link {
@@ -4136,10 +4139,7 @@ textarea {
 	padding-bottom: 220px;
 }
 
-.mod-work::before {
-	background: url('../../upload/websites-work/bg.png') no-repeat;
-	margin-bottom: -50px;
-}
+
 
 .mod-work .main-title {
 	font-size: 45px;
@@ -4224,25 +4224,6 @@ textarea {
 	}
 }
 
-@media screen and (max-width: 576px) {
-	.mod-work {
-		padding-top: 100px;
-		padding-bottom: 200px;
-		margin-top: 40px;
-	}
-
-	.mod-work::before {
-		background: url('../../upload/websites-work/bg2.png') no-repeat;
-		background-size: 100%;
-	}
-}
-
-@media screen and (max-width: 375px) {
-	.mod-work {
-		padding-bottom: 50px;
-	}
-}
-
 .mod-get {
 	padding-top: 150px;
 	padding-bottom: 310px;
@@ -4253,11 +4234,6 @@ textarea {
 	position: absolute;
 	right: 0;
 	bottom: 10%;
-}
-
-.mod-get::before {
-	background: url('../../upload/websites-get/bg.png') no-repeat;
-	z-index: 0;
 }
 
 .mod-get .main-title {
@@ -4287,6 +4263,13 @@ textarea {
 }
 
 @media screen and (max-width: 1200px) {
+
+	.mod-get {
+		padding-top: 45px;
+		padding-bottom: 180px;
+		position: relative;
+	}
+
 	.mod-get .main-title {
 		font-size: 30px;
 		margin-bottom: 40px;
@@ -4306,17 +4289,11 @@ textarea {
 	.mod-get .dop {
 		display: none;
 	}
-
-	.mod-get {
-		padding-bottom: 260px;
-	}
 }
 
 @media screen and (max-width: 576px) {
 	.mod-get {
-		margin-top: 40px;
-		padding-top: 100px;
-		padding-bottom: 140px;
+		padding-bottom: 20px;
 	}
 
 	.mod-get::before {
@@ -4331,154 +4308,28 @@ textarea {
 	margin-top: -10px;
 }
 
-/* Отзывы */
-:root {
-	--link-color: #1C69D4;
-}
 
-.mod-reviews {
-	padding: 120px 0 180px;
-}
-
-.mod-reviews::before {
-	background: url(../../upload/light-bg.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	opacity: .3;
-	z-index: -2;
-	top: -25rem;
-}
-
-.mod-reviews::after {
-	content: '';
-	background-image: url(../../upload/reviews/puzzle-bg.png);
-	z-index: 0;
-	background-position: left center;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-repeat: no-repeat;
-	top: 0;
-	left: 0;
-}
-
-.mod-reviews .wrap {
-	background-image: url(../img/icons/icon-s.png);
-	background-repeat: no-repeat;
-	background-position: top 25% left 5%;
-	padding: 1.5rem 2.2rem;
-	border-radius: 1rem;
-	box-shadow: 0px 7px 30px rgb(52, 87, 139, .5);
-}
-
-.mod-reviews .wrap .text {
-	letter-spacing: 0;
-	display: -webkit-box;
-	-webkit-line-clamp: 5;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
-}
-
-@media (max-width: 576px) {
-	.mod-reviews .wrap {}
-}
-
-.mod-reviews .main-title {
-	text-align: center;
-}
-
-.mod-reviews .text {
-	letter-spacing: 0
-}
-
-.mod-reviews .title,
-.mod-reviews .link {
-	font-weight: 600;
-	line-height: 125%;
-}
-
-.mod-reviews .title {
-	font-size: 1.22rem;
-	margin-bottom: 1.5rem;
-}
-
-.mod-reviews .link {
-	display: inline-block;
-	font-size: 1rem;
-	color: var(--link-color);
-	position: relative;
-	padding-right: 35px;
-}
-
-.mod-reviews .link::before {
-	content: '';
-	position: absolute;
-	background-image: url(../../upload/reviews/icons/arrow-action.svg);
-	width: 20px;
-	height: 18px;
-	background-repeat: no-repeat;
-	right: 0;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-/* // slider */
-.mod-reviews .owl-carousel .owl-dots,
-.mod-reviews .owl-carousel .owl-nav {
-	display: block;
-}
-
-@media (max-width: 1200px) {
-	.mod-reviews {
-		padding-top: 0;
-	}
-
-	.mod-tarif::before {
-		top: -12px;
-	}
-}
-
-@media (max-width: 992px) {
-	.mod-reviews .owl-carousel .owl-nav {
-		display: none;
-	}
-}
-
-@media (max-width: 576px) {
-	.mod-get::before {
-		z-index: -1;
-	}
-
-	.mod-reviews {
-		padding-top: 50px;
-	}
-
-	.mod-reviews .main-title {
-		font-size: 2rem;
-	}
-
-	.mod-reviews .owl-carousel .owl-nav {
-		display: block;
-		max-width: 150px;
-		top: 125%;
-	}
-}
-
-.mod-reviews .owl-carousel {
-	margin-bottom: 140px;
-}
-
-.mod-reviews .owl-carousel .owl-dots {
-	bottom: -50px;
-}
-
-/* ----  */
-
+/* backgound - bg section */
 .mod-tarif::before {
 	background: url('../../upload/websites-tarif/bg.png') no-repeat;
 	top: -150px;
 	z-index: -1;
+	background-size: cover;
 }
+
+.mod-work::before {
+	background: url('../../upload/websites-work/bg.png') no-repeat;
+	margin-bottom: -50px;
+	background-size: cover;
+}
+
+.mod-get::before {
+	background: url('../../upload/websites-get/bg.png') no-repeat;
+	z-index: 0;
+	background-size: cover;
+}
+
+/* ________________ */
 
 .mod-tarif .main-title {
 	text-align: center;
@@ -4558,8 +4409,7 @@ textarea {
 @media screen and (max-width: 1200px) {
 	.mod-tarif {
 		background-size: cover;
-		min-height: 74vh;
-		padding: 0 0 140px 0;
+		padding: 0 0 210px 0;
 	}
 
 	.mod-get .row:first-child {
@@ -4597,23 +4447,10 @@ textarea {
 	}
 }
 
-@media screen and (max-width: 576px) {
-	.mod-tarif {
-		padding-top: 160px;
-		padding-bottom: 170px;
-	}
-
-	.mod-tarif::before {
-		background: url('../../upload/websites-tarif/bg2.png') no-repeat;
-		top: 0;
-		background-size: 100%;
-	}
-}
-
 .mod-answer {
-	margin-bottom: 100px;
+	margin-bottom: 70px;
 	padding: 70px 0;
-	margin-top: -80px;
+	margin-top: -100px;
 	position: relative;
 	z-index: 99;
 }
@@ -6781,10 +6618,6 @@ button.owl-prev.disabled::before {
 
 @media screen and (max-width: 992px) {
 
-	.mod-websites-process {
-		padding-bottom: 120px;
-	}
-
 	.mod-crm-banner .img::before {
 		height: 100%;
 		width: 100%;
@@ -8120,8 +7953,8 @@ button.owl-prev.disabled::before {
 @media (max-width: 600px) {
 	.container section {
 		width: 100%;
-		padding-right: var(--bs-gutter-x, 1.75rem);
-		padding-left: var(--bs-gutter-x, 1.75rem);
+		padding-right: var(--bs-gutter-x, .75rem);
+		padding-left: var(--bs-gutter-x, .75rem);
 		margin-right: auto;
 		margin-left: auto;
 	}
