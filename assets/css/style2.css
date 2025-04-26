@@ -3209,30 +3209,6 @@ input.error {
         top: -9%;
         left: 2%;
     }
-
-    footer #footer_items {
-        flex-direction: column;
-    }
-
-    footer #footer_items .desc {
-        max-width: 50%;
-    }
-
-    footer #footer_info .parnter br {
-        display: block !important;
-    }
-
-    footer #footer_info .parnter {
-        margin-bottom: 15px;
-    }
-
-    footer #author {
-        align-items: start;
-    }
-
-    footer #author>* {
-        margin-bottom: 15px;
-    }
 }
 
 

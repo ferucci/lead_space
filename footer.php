@@ -2,135 +2,86 @@
 </main>
 
 <footer>
-    <div class="d-none d-sm-block">
+    <div class="footer">
         <div class="container">
-            <div id="footer_items">
-                <div>
-                    <img src="upload/logo.svg" alt="" style="margin-bottom: 28px;">
-                    <div class="desc">LeadSpace – компания <br>разработчик с фокусом на <br>внедрение CRM Битрик</div>
-                </div>
-                <ul class="menu">
-                    <li><a href="company.php">Компания</a></li>
-                    <li><a href="cases.php">Кейсы</a></li>
-                    <li><a href="blog.php">Блог</a></li>
-                    <li><a href="contacts.php">Контакты</a></li>
-                </ul>
-                <ul class="menu">
-                    <li><a href="" class="text-primary">Услуги</a></li>
-                    <li><a href="crm.php">Внедрение CRM</a></li>
-                    <li><a href="websites.php">Разработка сайтов</a></li>
-                    <li><a href="">Контекстная реклама</a></li>
-                </ul>
-                <div>
-                    <div class="d-flex align-items-center flex-column-reverse gap-2 mb-1">
-                        <a href="tel:+79391112043" class="phone">+7 939 111-20-43</a>
-                        <a data-fancybox href="#hidden" class="btn btn-primary">Начать проект</a>
-                    </div>
-                    <div class="d-flex align-items-center email">
-                        <img src="upload/icon/email.svg" alt="" style="margin-right: 8px;">
-                        <a href="mailto:info@lead-space.ru">info@lead-space.ru</a>
-                    </div>
-                    <div class="d-flex align-items-end justify-content-end gap-2 soc mb-3">
-                        <a href="#"><img src="upload/telegram.png" alt=""></a>
-                        <a href="#"><img src="upload/whatsapp.png" alt=""></a>
-                    </div>
-
-                </div>
-            </div>
-
-            <div id="footer_info">
-                <div class="info">
-                    <div>ИНН 481201837970</div>
-                    <div>ОГРНИП 320482700003462</div>
-                </div>
-                <div class="d-flex align-items-center">
-                    <div class="parnter bitrix">
-                        <img src="upload/footer/1cbitrix.svg" alt="">
-                        <div class="title">Партнер <br>1С Битрикс</div>
-                    </div>
-                    <div class="parnter bitrix24">
-                        <img src="upload/footer/bitrix24.svg" alt="">
-                        <div class="title">Партнер <br>Битрикс24</div>
-                    </div>
-                    <div class="parnter yandex">
-                        <img src="upload/footer/yandex.svg" alt="">
-                        <div class="title">Рейтинг <br>орг. в Янд</div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="author">
-                <div>© 2025 «LeadSpace» Все права защищены.</div>
-                <a href="#">Политика конфиденциальности</a>
-                <a href="#">LeadSpace на портале Битрикс24</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="d-block d-sm-none">
-        <div class="container">
-            <div id="footer_items">
-                <div class="d-flex align-items-center justify-content-between w-100 mb-5">
-                    <img src="upload/logo.svg" alt="">
-                    <div class="desc">LeadSpace – компания <br>разработчик с фокусом на <br>внедрение CRM Битрик</div>
-                </div>
-                <div id="footer_info">
-                    <div class="info">
-                        <div>ИНН 481201837970</div>
-                        <div>ОГРНИП 320482700003462</div>
-                    </div>
-
-                </div>
-                <div class="d-flex w-100 justify-content-between mb-4">
-                    <ul class="menu">
-                        <li><a href="company.php">Компания</a></li>
-                        <li><a href="cases.php">Кейсы</a></li>
-                        <li><a href="blog.php">Блог</a></li>
-                        <li><a href="contacts.php">Контакты</a></li>
-                    </ul>
-                    <ul class="menu">
-                        <li><a href="" class="text-primary">Услуги</a></li>
-                        <li><a href="crm.php">Внедрение CRM</a></li>
-                        <li><a href="websites.php">Разработка сайтов</a></li>
-                        <li><a href="">Контекстная реклама</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <div class="d-flex align-items-center mb-4">
-                        <a href="tel:+79391112043" class="phone">+7 939 111-20-43</a>
-                        <div class="soc">
-                            <a href="#" style="margin-right: 12px;"><img src="upload/telegram.png" alt=""></a>
-                            <a href="#"><img src="upload/whatsapp.png" alt=""></a>
+            <div class="footer__inner d-flex flex-column gap-5">
+                <div class="footer__items d-flex justify-content-between h-100 flex-wrap flex-xl-nowrap gap-xl-0 gap-3" id="footer_items">
+                    <div class="footer__grid-lg d-flex flex-column justify-content-around mt-n4 gap-xl-0 gap-3">
+                        <img class="footer__logo" src="upload/logo.svg" alt="logo company">
+                        <div class="desc">LeadSpace – компания <br>разработчик с фокусом на <br>внедрение CRM Битрик</div>
+                        <div class="info d-flex flex-column">
+                            <span>ИНН 481201837970</span>
+                            <span>ОГРНИП 320482700003462</span>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center email mb-4">
-                        <img src="upload/icon/email.svg" alt="" style="margin-right: 8px;">
-                        <a href="mailto:info@lead-space.ru">info@lead-space.ru</a>
+                    <div class="d-grid">
+                        <ul class="menu">
+                            <li><a href="company.php">Компания</a></li>
+                            <li><a href="cases.php">Кейсы</a></li>
+                            <li><a href="blog.php">Блог</a></li>
+                            <li><a href="contacts.php">Контакты</a></li>
+                        </ul>
+                        <ul class="menu">
+                            <li><a href="" class="text-primary">Услуги</a></li>
+                            <li><a href="websites.php">Разработка сайтов</a></li>
+                            <li><a href="">Контекстная реклама</a></li>
+                        </ul>
+                        <ul class="menu">
+                            <li><a href="#" class="text-primary">Битрикс24</a></li>
+                            <li><a href="crm.php">Внедрение CRM</a></li>
+                            <li><a href="#">Лицензии и тарифы</a></li>
+                        </ul>
+                        <!-- Блок контактов и кнопки -->
+                        <div class="footer__actions gap-2">
+                            <div class="d-flex align-items-end flex-column-reverse gap-2 mb-1">
+                                <a data-fancybox href="#hidden" class="btn btn-primary">Начать проект</a>
+                            </div>
+                        </div>
+
+                        <div class="footer__contacts gap-2">
+                            <a href="tel:+79391112043" class="phone">+7 939 111-20-43</a>
+                            <div class="d-flex align-items-center justify-content-end email">
+                                <img src="upload/icon/email.svg" alt="">
+                                <a href="mailto:info@lead-space.ru">info@lead-space.ru</a>
+                            </div>
+                            <div class="footer__social d-flex align-items-end justify-content-end gap-2">
+                                <a href="#"><img src="upload/telegram.png" alt=""></a>
+                                <a href="#"><img src="upload/whatsapp.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div id="footer__partners">
+                            <div class="d-flex align-items-center gap-1 gap-sm-4 flex-wrap flex-sm-nowrap">
+                                <div class="parnter bitrix">
+                                    <img src="upload/footer/1cbitrix.svg" alt="">
+                                    <div class="title">Партнер <br>1С Битрикс</div>
+                                </div>
+                                <div class="parnter bitrix24">
+                                    <img src="upload/footer/bitrix24.svg" alt="">
+                                    <div class="title">Партнер <br>Битрикс24</div>
+                                </div>
+                                <div class="parnter yandex">
+                                    <img src="upload/footer/yandex.svg" alt="">
+                                    <div class="title">Рейтинг <br>орг. в Янд</div>
+                                </div>
+                            </div>
+                            <div class="footer__readme d-flex align-items-center gap-2 fs-6 me-sm-2 me-lg-0">
+                                <span>Читайте нас:</span>
+                                <a href="#"><img src="./upload/footer/dzen-icon.svg" alt=""></a>
+                                <a href="#"><img src="./upload/footer/vk-icon.svg" alt=""></a>
+                            </div>
+                        </div>
                     </div>
-                    <a class="btn btn-primary mb-4" data-fancybox href="#hidden">Начать проект</a>
+                </div>
+
+
+
+                <div id="author">
+                    <div>© 2025 «LeadSpace» Все права защищены.</div>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">LeadSpace на портале Битрикс24</a>
                 </div>
             </div>
-            <div id="footer_info">
-                <div class="d-flex align-items-center flex-wrap">
-                    <div class="parnter bitrix">
-                        <img src="upload/footer/1cbitrix.svg" alt="">
-                        <div class="title">Партнер <br>1С Битрикс</div>
-                    </div>
-                    <div class="parnter bitrix24">
-                        <img src="upload/footer/bitrix24.svg" alt="">
-                        <div class="title">Партнер <br>Битрикс24</div>
-                    </div>
-                    <div class="parnter yandex">
-                        <img src="upload/footer/yandex.svg" alt="">
-                        <div class="title">Рейтинг <br>орг. в Янд</div>
-                    </div>
-                </div>
-            </div>
-            <div id="author" class="flex-column">
-                <div>© 2023 «LeadSpace» Все права защищены.</div>
-                <a href="#">Политика конфиденциальности</a>
-                <a href="#">LeadSpace на портале Битрикс24</a>
-            </div>
+
         </div>
     </div>
 </footer>

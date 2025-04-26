@@ -539,134 +539,6 @@ header #top_menu ul.menu li a {
 	}
 }
 
-/* ÐŸÐ¾Ð´Ð²Ð°Ð» */
-footer {
-	margin-top: auto;
-	padding-top: 50px;
-}
-
-footer a {
-	color: #232323;
-}
-
-footer #footer_items {
-	display: flex;
-	align-items: flex-start;
-	justify-content: space-between;
-}
-
-footer #footer_items .desc {
-	color: #616161;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 17.50px;
-}
-
-footer #footer_items ul.menu {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-	padding-left: 0;
-}
-
-footer #footer_items ul.menu li:not(:last-child) {
-	margin-bottom: 12px;
-}
-
-footer #footer_items ul.menu li a {
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 20px;
-}
-
-footer #footer_items .phone {
-	margin-right: 24px;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 24.30px;
-}
-
-footer #footer_items .btn {
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 20px;
-	padding: 13px 34px;
-}
-
-footer #footer_info {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin-bottom: 45px;
-}
-
-footer #footer_info .info {
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 17.50px;
-}
-
-footer #footer_info .parnter {
-	padding: 10px 13px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 0 30px 30px 20px;
-	border: 1px solid #616161;
-	transition: all .2s ease-in-out;
-}
-
-footer #footer_info .parnter {
-	margin-right: 25px;
-}
-
-footer #footer_info .parnter.bitrix:hover {
-	background: #dc3545;
-	color: white;
-	border: 1px solid #dc3545;
-}
-
-footer #footer_info .parnter.bitrix:hover img {
-	filter: invert(100%);
-}
-
-footer #footer_info .parnter.bitrix24:hover {
-	background: #0d6efd;
-	color: white;
-	border: 1px solid #0d6efd;
-}
-
-footer #footer_info .parnter.bitrix24:hover img {
-	filter: invert(100%);
-}
-
-footer #footer_info .parnter.yandex:hover {
-	background: #fc0;
-
-	border: 1px solid #fc0;
-}
-
-footer #footer_info .parnter img {
-	margin-right: 9px;
-}
-
-footer #footer_info .parnter .title {
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 17.50px;
-}
-
-footer #author {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	color: #616161;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 17.50px;
-	margin-bottom: 45px;
-}
-
 /* ÐœÐ¾Ð´ÑƒÐ»Ð¸ */
 .mod-contact {
 	padding-top: 70px;
@@ -4299,7 +4171,7 @@ textarea {
 	.mod-get::before {
 		background: url('../../upload/websites-get/bg2.png') no-repeat;
 		background-size: cover;
-		min-height: 100vh;
+		min-height: 135%;
 	}
 }
 
@@ -8004,16 +7876,6 @@ button.owl-prev.disabled::before {
 	.mod-main-services .owl-carousel .owl-nav {
 		left: 23%;
 		/*bottom: 15px;*/
-	}
-
-	footer #footer_info .info {
-
-		line-height: 24px;
-	}
-
-	footer #footer_info {
-
-		margin-bottom: 25px;
 	}
 
 	.mod-spheres .row {
