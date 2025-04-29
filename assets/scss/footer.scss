@@ -135,17 +135,21 @@ footer #footer__partners .parnter img {
 }
 
 /* Стили для меню и контактного блока */
-.menu,
-.d-grid>div:not(#footer__partners) {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
+.footer {
 
-/* Распределяем партнеров по колонкам */
-.parnter {
-  grid-column: span 1;
-  /* Каждый партнер занимает одну колонку */
+  & .menu,
+  .d-grid>div:not(#footer__partners) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  /* Распределяем партнеров по колонкам */
+  .parnter {
+    grid-column: span 1;
+    /* Каждый партнер занимает одну колонку */
+  }
+
 }
 
 /* Общие стили для всех экранов */
