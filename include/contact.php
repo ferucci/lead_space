@@ -13,8 +13,8 @@
                 </div>
             </div>
             <div class="soc">
-                <a href="#" style="margin-right: 12px;"><img src="upload/telegram.png" alt=""></a>
-                <a href="#"><img src="upload/whatsapp.png" alt=""></a>
+                <a href="#" style="margin-right: 12px;"><img src="upload/telegram.svg" alt=""></a>
+                <a href="#"><img src="upload/whatsapp.svg" alt=""></a>
             </div>
         </div>
         <div class="place">

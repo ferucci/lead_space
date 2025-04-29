@@ -1,12 +1,12 @@
 .mod-reviews::after {
   background:
-    url(../../upload/puzzle.svg) left center no-repeat,
+    url(../../upload/puzzle-white.svg) left center no-repeat,
     url(../../upload/puzzle-blue.svg) right center no-repeat;
 }
 
 .mod-tarif::after {
   background:
-    url(../../upload/puzzle.svg) right 10% center no-repeat;
+    url(../../upload/puzzle-white.svg) right 10% center no-repeat;
   opacity: .1;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .mod-websites-process::after {
-  background: url(../../upload/puzzle.svg) right -19% bottom 45% no-repeat;
+  background: url(../../upload/puzzle-white.svg) right -19% bottom 45% no-repeat;
   height: 100%;
   opacity: .1;
   background-size: 35%;
@@ -55,7 +55,6 @@
   .mod-work,
   .mod-websites-process,
   .mod-websites-cases {
-
     &::after {
       content: none
     }

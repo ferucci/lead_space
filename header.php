@@ -60,8 +60,8 @@
                     </ul>
                 </div>
                 <div class="soc">
-                    <a href="#" style="margin-right: 12px;"><img src="upload/telegram.png" alt=""></a>
-                    <a href="#"><img src="upload/whatsapp.png" alt=""></a>
+                    <a href="#" style="margin-right: 12px;"><img src="upload/telegram.svg" alt=""></a>
+                    <a href="#"><img src="upload/whatsapp.svg" alt=""></a>
                 </div>
             </div>
 
@@ -74,8 +74,8 @@
                 <a href="/"><img src="upload/logo.svg" alt=""></a>
                 <div class="d-flex align-items-center">
                     <div class="soc">
-                        <a href="#" style="margin-right: 12px;"><img src="upload/telegram.png" alt=""></a>
-                        <a href="#" style="margin-right: 12px;"><img src="upload/whatsapp.png" alt=""></a>
+                        <a href="#" style="margin-right: 12px;"><img src="upload/telegram.svg" alt=""></a>
+                        <a href="#" style="margin-right: 12px;"><img src="upload/whatsapp.svg" alt=""></a>
                         <a href="#"><img src="upload/phone.png" alt=""></a>
                     </div>
                     <div class="burger">

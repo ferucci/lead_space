@@ -243,7 +243,7 @@
   /* _ */
 
   .case-card__title {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
     margin: 0;
   }
@@ -285,7 +285,7 @@
   .filters {
     display: flex;
     align-items: center !important;
-    justify-content: flex-start !important;
+    justify-content: space-between !important;
   }
 
 

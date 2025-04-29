@@ -9,7 +9,8 @@
             <div class="col-lg-3">
                 <div class="wrap h-100">
                     <img src="upload/development/001.svg" alt="">
-                    <div class="title">Одностраничный сайт</div>
+                    <div class="title">Одностраничный
+                        сайт/ лендинг / сайт-визитка</div>
                     <div class="subtitle">Когда нужно быстро и эффективно</div>
                     <div style="margin-top: auto;">
                         <div class="price">от 90 000</div>
@@ -34,7 +35,7 @@
                     <div class="title">Интернет-магазин</div>
                     <div class="subtitle">Выстроить продажи компании, автоматизировать процессы и настроить интеграции</div>
                     <div style="margin-top: auto;">
-                        <div class="price">от 90 000</div>
+                        <div class="price">от 220 000</div>
                         <button class="btn btn-primary" data-fancybox="" href="#hidden">Оставить заявку</button>
                     </div>
                 </div>
@@ -42,10 +43,11 @@
             <div class="col-lg-3">
                 <div class="wrap h-100">
                     <img src="upload/development/004.svg" alt="">
-                    <div class="title">Web-сервис</div>
+                    <div class="title">Индивидуальная
+                        разработка</div>
                     <div class="subtitle">Разработка онлайн-сервиса по техническому заданию</div>
                     <div style="margin-top: auto;">
-                        <div class="price">от 500 000</div>
+                        <div class="price fs-5">Цена обсуждается</div>
                         <button class="btn btn-primary" data-fancybox="" href="#hidden">Оставить заявку</button>
                     </div>
                 </div>
@@ -57,7 +59,8 @@
         <div class="owl-carousel">
             <div class="wrap h-100">
                 <img src="upload/development/001.svg" alt="">
-                <div class="title">Одностраничный сайт</div>
+                <div class="title">Одностраничный
+                    сайт/ лендинг / сайт-визитка</div>
                 <div class="subtitle">Когда нужно быстро и эффективно</div>
                 <div style="margin-top: auto;">
                     <div class="price">от 90 000</div>
@@ -80,16 +83,17 @@
                 <div class="title">Интернет-магазин</div>
                 <div class="subtitle">Выстроить продажи компании, автоматизировать процессы и настроить интеграции</div>
                 <div style="margin-top: auto;">
-                    <div class="price">от 90 000</div>
+                    <div class="price">от 220 000</div>
                     <button class="btn btn-primary" data-fancybox="" href="#hidden">Оставить заявку</button>
                 </div>
             </div>
             <div class="wrap h-100">
                 <img src="upload/development/004.svg" alt="">
-                <div class="title">Web-сервис</div>
+                <div class="title">Индивидуальная
+                    разработка</div>
                 <div class="subtitle">Разработка онлайн-сервиса по техническому заданию</div>
                 <div style="margin-top: auto;">
-                    <div class="price">от 500 000</div>
+                    <div class="price fs-5">Цена обсуждается</div>
                     <button class="btn btn-primary" data-fancybox="" href="#hidden">Оставить заявку</button>
                 </div>
             </div>

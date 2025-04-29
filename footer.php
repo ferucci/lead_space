@@ -45,8 +45,8 @@
                                 <a href="mailto:info@lead-space.ru">info@lead-space.ru</a>
                             </div>
                             <div class="footer__social d-flex align-items-end justify-content-end gap-2">
-                                <a href="#"><img src="upload/telegram.png" alt=""></a>
-                                <a href="#"><img src="upload/whatsapp.png" alt=""></a>
+                                <a href="#"><img src="upload/telegram.svg" alt="telegram icon"></a>
+                                <a href="#"><img src="upload/whatsapp.svg" alt="whatsapp icon"></a>
                             </div>
                         </div>
                         <div id="footer__partners">

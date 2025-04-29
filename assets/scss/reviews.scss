@@ -20,15 +20,16 @@
   }
 
   .wrap {
-    background-image: url(../../img/icons/icon-s.png);
+    background-image: url(../img/icons/icon-s.png);
     background-repeat: no-repeat;
     background-position: top 30% left 8%;
     padding: 1.5rem 2.2rem;
     border-radius: .5rem;
-    box-shadow: 0px 7px 30px rgb(52, 87, 139, .5);
+    box-shadow: 1px 2px 19px rgba(52, 87, 139, .2);
   }
 
   .wrap .text {
+    font-size: .88rem;
     letter-spacing: 0;
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -53,7 +54,7 @@
 
   .link {
     display: inline-block;
-    font-size: 1rem;
+    font-size: .88rem;
     color: var(--link-color);
     position: relative;
     padding-right: 35px;
@@ -126,6 +127,6 @@
   .mod-reviews .owl-carousel .owl-nav {
     display: block;
     max-width: 150px;
-    top: 125%;
+    top: 130%;
   }
 }

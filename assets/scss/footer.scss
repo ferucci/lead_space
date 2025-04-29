@@ -126,8 +126,9 @@ footer #footer__partners .parnter img {
 }
 
 .d-grid {
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0 1rem;
+  gap: 0rem 1rem;
 }
 
 .footer__inner {
@@ -153,11 +154,6 @@ footer #footer__partners .parnter img {
 }
 
 /* Общие стили для всех экранов */
-.d-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
 
 .footer__actions {
   grid-column: 4;
@@ -167,7 +163,7 @@ footer #footer__partners .parnter img {
   grid-column: 4;
   display: flex;
   flex-direction: column;
-  margin-top: -5rem;
+  margin-top: -4rem;
 }
 
 @media (max-width: 1200px) {

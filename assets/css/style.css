@@ -3382,7 +3382,12 @@ textarea {
 
 
 
-
+@media screen and (min-width: 1920px) {
+	.mod-websites-banner::before {
+		width: 55vw;
+		margin-left: -10%;
+	}
+}
 
 .mod-websites-banner {
 	position: relative;
@@ -3397,9 +3402,9 @@ textarea {
 	background-position-x: right;
 	background-position-y: top;
 	z-index: -1;
-	top: -40%;
+	top: -15%;
 	background-size: cover;
-	background-size: 950px;
+	background-size: 750px;
 }
 
 .mod-websites-banner .title {
@@ -3469,7 +3474,7 @@ textarea {
 
 @media screen and (max-width: 1460px) {
 	.mod-websites-banner::before {
-		background-position-x: right -50%
+		background-position: right -25% top;
 	}
 }
 
@@ -4203,80 +4208,6 @@ textarea {
 
 /* ________________ */
 
-.mod-tarif .main-title {
-	text-align: center;
-	color: #fff;
-	font-size: 45px;
-	font-weight: 700;
-	line-height: 120%;
-}
-
-.mod-tarif .main-introtext {
-	text-align: center;
-	color: #fff;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 125%;
-}
-
-.mod-tarif .wrap {
-	border-radius: 10px;
-	box-shadow: 0px 7px 30px 0px rgba(20, 45, 84, 0.35);
-	background: rgb(255, 255, 255);
-	padding: 30px 20px;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-}
-
-.mod-tarif .wrap::before {
-	content: "";
-	position: absolute;
-	bottom: -12px;
-	left: 0;
-	width: 100%;
-	height: 20px;
-	/* Ð’Ñ‹ÑÐ¾Ñ‚Ð° Ð·Ð¼ÐµÐ¹ÐºÐ¸ */
-	background: linear-gradient(135deg, transparent 50%, white 50%), linear-gradient(-135deg, transparent 50%, white 50%);
-	background-size: 20px 20px;
-	/* Ð¨Ð°Ð³ Ð·Ð¼ÐµÐ¹ÐºÐ¸ */
-	background-repeat: repeat-x;
-	transform: rotate(180deg);
-}
-
-.mod-tarif .wrap .title {
-	font-size: 20px;
-	font-weight: 700;
-	line-height: 125%;
-	margin-bottom: 15px;
-}
-
-.mod-tarif .wrap .introtext {
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 125%;
-	margin-bottom: 45px;
-	color: #616161;
-}
-
-.mod-tarif .wrap .price {
-	font-size: 35px;
-	font-weight: 400;
-	line-height: 135%;
-	margin-bottom: 30px;
-}
-
-.mod-tarif .wrap .btn {
-	padding: 16px 20px;
-}
-
-.mod-tarif .btn-light {
-	margin: 0 auto;
-}
-
-.mod-tarif .text {
-	font-size: 16px;
-}
 
 @media screen and (max-width: 1200px) {
 	.mod-tarif {
