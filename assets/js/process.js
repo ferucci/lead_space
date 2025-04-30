@@ -19,14 +19,36 @@ $(document).ready(function () {
   const $window = $(window);
   const $processItems = $('.process-item');
   const $puzzleSvgs = $('.item__puzzle');
-  let isApplyingMargins = false;
+
+  function setValueInnerItems(item, text, href) {
+    const $wrap = item.prevObject[0].querySelector('.wrap')
+    const $title = $wrap.querySelector('.subtitle')
+    const $svg = $wrap.querySelector('.main-svg > use')
+
+    $title.innerText = text
+    $svg.setAttribute('href', href);
+  }
 
   // Функция для установки позиций элементов
   function updateItemPositions() {
+    const mobile = $window.width() < 1200;
+
+    const $item3 = $('.process-item[data-process="3"]').closest('.owl-item');
+    const $item5 = $('.process-item[data-process="5"]').closest('.owl-item');
+
+    if (mobile) {
+      setValueInnerItems($item3, "Разработка", "#dev-svg")
+      setValueInnerItems($item5, "Запуск", "#start-svg")
+    } else {
+      setValueInnerItems($item5, "Разработка", "#dev-svg")
+      setValueInnerItems($item3, "Запуск", "#start-svg")
+    }
+
+
     $processItems.each(function () {
       const $this = $(this);
       const processNumber = $this.data('process');
-      let pos = $window.width() < 1200 ?
+      let pos = mobile ?
         positionsConfig.mobile :
         (positionsConfig.desktop[processNumber - 1] || { left: '0', top: '0' });
 
@@ -37,53 +59,6 @@ $(document).ready(function () {
       });
     });
   }
-
-  // // Функция для установки отступов в слайдере
-  // function applySliderMargins() {
-  //   if (isApplyingMargins) return;
-  //   isApplyingMargins = true;
-
-  //   const $slider = $('.process-items__slider.owl-carousel');
-  //   if (!$slider.length) {
-  //     isApplyingMargins = false;
-  //     return;
-  //   }
-
-  //   const owl = $slider.data('owl.carousel');
-  //   if (!owl) {
-  //     isApplyingMargins = false;
-  //     return;
-  //   }
-
-  //   // 1. Получаю реальную ширину элемента слайдера
-  //   const $firstItem = $slider.find('.owl-item:not(.cloned)').first();
-  //   const itemWidth = $firstItem.width();
-
-  //   // 2. Задаю желаемый процент (например, 10%)
-  //   const marginPercent = -16.5;
-  //   const marginValue = itemWidth * marginPercent / 100;
-
-  //   // Применяю margin ко всем элементам, кроме первого
-  //   $slider.find('.owl-item').each(function (index) {
-  //     if (index === 0) {
-  //       // Для первого элемента - сбрасываем margin
-  //       $(this).css({
-  //         'margin-left': '0',
-  //       });
-  //     } else {
-  //       // Для остальных элементов - устанавливаю margin
-  //       $(this).css({
-  //         'margin-left': marginValue + 'px'
-  //       });
-  //     }
-  //   });
-
-  //   // Обновляю слайдер без триггера событий
-  //   setTimeout(() => {
-  //     owl.onResize();
-  //     isApplyingMargins = false;
-  //   }, 50);
-  // }
 
   // Функция инициализации/уничтожения слайдера
   function initProcessSlider() {
@@ -140,17 +115,9 @@ $(document).ready(function () {
           },
           onInitialized: function () {
             $('.owl-thumbs').remove();
-            // setTimeout(applySliderMargins, 100);
           }// Вызываем после инициализации
         });
-      // Обработчики событий слайдера
-      // $slider
-      //   .on('changed.owl.carousel', function () {
-      //     setTimeout(applySliderMargins, 50);
-      //   })
-      //   .on('resized.owl.carousel', function () {
-      //     setTimeout(applySliderMargins, 50);
-      //   });
+
     } else {
       // Если есть активный слайдер - уничтожаем его
       if ($sliderContainer.hasClass('owl-carousel')) {
@@ -189,7 +156,6 @@ $(document).ready(function () {
     resizeTimer = setTimeout(function () {
       updateItemPositions();
       initProcessSlider();
-      // applySliderMargins();
     }, 200);
   }
 

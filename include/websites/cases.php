@@ -360,14 +360,20 @@
 <script>
   // Общая функция фильтрации
   function applyFilter(filter) {
-    document.querySelectorAll(".case-item").forEach(card => {
-      if (filter === "all" || card.dataset.cat === filter) {
+    const maxItems = window.innerWidth < 1200 ? 3 : 6;
+    let visibleCount = 0;
+
+    document.querySelectorAll(".case-item").forEach((card) => {
+      if ((filter === "all" || card.dataset.cat === filter) && visibleCount < maxItems) {
         card.style.display = "block";
+        visibleCount++;
       } else {
         card.style.display = "none";
       }
     });
   }
+
+  applyFilter('all')
 
   // Десктопные кнопки
   const desktopButtons = document.querySelectorAll(".filters button");

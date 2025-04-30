@@ -268,7 +268,7 @@
             margin: 40,
             navText: ['<div class="prev"></div>', '<div class="next"></div>'],
             responsive: {
-                0: { items: 1, stagePadding: 0, margin: 10, },
+                0: { items: 1, loop: false, stagePadding: 0, margin: 25, },
                 600: { items: 2, stagePadding: 0, margin: 10, },
                 1200: { items: 5, stagePadding: 150, nav: true, }
             }

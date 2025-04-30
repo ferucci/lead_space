@@ -69,7 +69,7 @@
         <div class="owl-carousel">
             <div class="wrap h-100">
                 <h5 class="title">Старт</h5>
-                <ul class="introtext" style="padding: 0 24px;">
+                <ul class="introtext">
                     <li>Корпоративный сайт</li>
                     <li>Лендинг</li>
                     <li>Сайт-визитка</li>
