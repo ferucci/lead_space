@@ -1,3 +1,5 @@
+$padding-x: 20px;
+
 ul.introtext {
   padding: 0 1.2rem;
 }
@@ -12,10 +14,10 @@ ul.introtext {
     top: 0;
     left: 0;
     right: 0;
-    width: calc(100% + 2rem);
+    width: calc(100% + ($padding-x * 2));
     height: 47px;
     border-top: 3px dashed rgba(#0B57D4, .7);
-    margin-left: -1rem;
+    margin-left: -$padding-x;
   }
 }
 
@@ -25,7 +27,7 @@ ul.introtext {
     border-radius: 10px;
     box-shadow: 0px 7px 30px 0px rgba(20, 45, 84, 0.35);
     background: rgb(255, 255, 255);
-    padding: 30px 20px;
+    padding: 30px $padding-x;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -98,6 +100,8 @@ ul.introtext {
 }
 
 @media screen and (max-width: 430px) {
+  $padding-x: 28px;
+
   .mod-tarif {
 
     .main-title,
@@ -110,7 +114,7 @@ ul.introtext {
     }
 
     .wrap {
-      padding: 50px 28px;
+      padding: 50px $padding-x;
       max-width: 282px;
 
       .introtext {
@@ -122,5 +126,10 @@ ul.introtext {
     .owl-item {
       max-width: 282px;
     }
+  }
+
+  .card__footer::after {
+    width: calc(100% + ($padding-x * 2));
+    margin-left: -$padding-x;
   }
 }
